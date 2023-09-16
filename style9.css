@@ -1,0 +1,62 @@
+flex-containerhead, .logo-img, h2 {
+    /* margin: 0;
+    padding: 0;
+    display: inline-block; */
+    width: 40px;
+    height: 40px;
+}
+
+.banner-img{
+    width: 150px; 
+    height: 150px;
+
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.element{
+    margin-right: 16px;
+}
+
+.not-first-ele{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.flex-container-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.first-line{
+    padding-top: 200px;
+    font-size: 50px;
+}
+.second-line{
+    font-size: 50px;
+}
+
+.btn-style{
+    width: 380px;
+    background-color: aqua;
+}
+
+.logo-layout{
+    padding: 24px;
+    background-color: rgb(168, 166, 166);
+}
+
+.menu-layout{
+    width: 50%;
+    justify-content: flex-end;
+}
+.title-layout{
+    margin-right: 250px;
+    width: 50%; 
+}
+.margin-layout{
+    margin-left: 24px;
+    margin-right: 24px
+}
