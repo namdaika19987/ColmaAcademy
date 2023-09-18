@@ -1,4 +1,4 @@
-flex-containerhead, .logo-img, h2 {
+/*flex-containerhead, .logo-img, h2 {
     /* margin: 0;
     padding: 0;
     display: inline-block; */
@@ -60,3 +60,246 @@ flex-containerhead, .logo-img, h2 {
     margin-left: 24px;
     margin-right: 24px
 }
+
+*/
+
+
+
+
+
+/* Universal Styles */
+
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 2vmin; /* Alternate size 16px */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #cf1b1b;
+}
+
+main, footer {
+    position: relative;
+    top: 4.5rem;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.image-container {
+    overflow: hidden;
+    box-shadow: 5px 5px 20px darkslategrey;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    padding: 1rem 0;
+    background-color: #505050;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 80%;
+    box-shadow: 5px 5px 20px darkslategrey;
+    transition: all 0.5s ease-in 0.1s;
+}
+/* 
+.button:hover {
+    background-color: darkslategray;
+    padding: 1.25rem 0.5rem;
+    box-shadow: 5px 5px 20px black
+} */
+
+/* .side-container {
+    display: flex;
+    align-items: right;
+    transition: background-color 0.5s ease-in 0.1s;
+} */
+
+/* .side-container:hover {
+    background-color: lightgray;
+} */
+
+h1 {
+    font-size: 6vmin; /* Alternate size 3.125rem */
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 5vmin; /* Alternate size 2.625rem */
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 3vmin; /* Alternate size 1.75rem */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #505050;
+}
+
+/* Chu thay doi mau khi click vao link */
+a:hover {
+    color: rgb(77, 139, 141);
+    font-size: 110%;
+}
+
+/* Header */
+
+header {
+    position: fixed;
+    /* z-index: 1; */
+    width: 100%;
+    height: 4.5rem;
+    background-color: white;
+    font-size: 1.25rem;
+    line-height: 4.5rem;
+    overflow: hidden;
+    opacity: 0.8;
+}
+
+header .left {
+    font-size: 1.5rem;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 1.5rem;
+}
+
+header .right {
+    margin-right: 1.5rem;
+}
+/* Menu tren man hinh desktop */
+header li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+header .left a:hover {
+    color: #505050;
+}
+
+header span {
+    color: gray;
+}
+
+.desktop img {
+    height: 4rem;
+    width: auto;
+    vertical-align: middle;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 650px) {
+
+    header .desktop {
+        display: none;
+    }
+    
+    header .mobile {
+        display: block;
+        width: 100%;
+        height: 4.5rem;
+        text-align: center;
+    }
+
+    header li {
+        margin: 0 4rem;
+    }
+
+    header .mobile img {
+        height: 3.5rem;
+        width: auto;
+        vertical-align: middle;
+    }
+}
+
+/* Banner */
+
+#banner {
+    display: flex; /* de banner co the co gian theo man hinh*/
+    align-items: center;
+    background-color: lightgray;
+}
+
+#banner-image {
+    width: 50%; /*hinh anh chi chiem 50% man hinh*/
+    margin: 2rem;
+}
+
+#banner .content {
+    width: 30%;
+    padding: 4rem 1.5rem;
+}
+
+#banner h3 {
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+}
+
+#banner a {
+    color: white;
+}
+
+@media only screen and (max-width: 1125px) {
+
+    #banner-image {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    #banner-image {
+        min-width: 90%;
+    }
+
+    #banner {
+        flex-flow: column;
+    }
+
+    #banner .content {
+        width: 70%;
+        padding: 0 1rem 2rem;
+    }
+
+    .button {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+
+    #banner-image {
+        width: 100%;
+        margin: auto;
+    }
+
+    #banner .content {
+        padding: 2rem 0;
+    }
+
+}
+
