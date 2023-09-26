@@ -61,6 +61,10 @@ main, footer {
     transition: all 0.5s ease-in 0.1s;
 }
 
+.button a:hover{
+
+}
+
 h1 {
     font-size: 6vmin; /* Alternate size 3.125rem */
     font-weight: 800;
@@ -194,10 +198,10 @@ h3 {
     line-height: 1.5;
 }
 
-a{
+/* a{
     text-decoration: none;
     color: white;
-}
+} */
 
 .newspaper-item a{
     color: black;
