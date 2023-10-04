@@ -1,10 +1,10 @@
-
 /* BAT DAU TU DAY LA PHAN EDIT NHE */
 
 /* Universal Styles */
 
 html {
-    font-size: 2vmin; /* Alternate size 16px */
+    font-size: 2vmin;
+    /* Alternate size 16px */
 }
 
 body {
@@ -13,7 +13,8 @@ body {
     /* display: block; */
 }
 
-main, footer {
+main,
+footer {
     position: relative;
     top: 4.5rem;
 }
@@ -27,28 +28,33 @@ main, footer {
 }
 
 
-.newspaper-container{
+.newspaper-container {
     display: flex;
     flex-direction: row;
     border: 1px solid;
 }
-.newspaper-item{
+
+.newspaper-item {
     width: 30%;
     height: fit-content;
     width: fit-content;
     padding: 16px;
 }
+
 /*image*/
-.newspaper-image{
+.newspaper-image {
     height: auto;
     width: 65%;
 }
-.left-image{
+
+.left-image {
     max-width: 100%;
 }
-.title-newspaper{
+
+.title-newspaper {
     font-size: large;
 }
+
 /*image*/
 .button {
     padding: 1rem 0;
@@ -63,18 +69,21 @@ main, footer {
 
 
 h1 {
-    font-size: 6vmin; /* Alternate size 3.125rem */
+    font-size: 6vmin;
+    /* Alternate size 3.125rem */
     font-weight: 800;
     margin-bottom: 2rem;
 }
 
 h2 {
-    font-size: 5vmin; /* Alternate size 2.625rem */
+    font-size: 5vmin;
+    /* Alternate size 2.625rem */
     font-weight: 800;
 }
 
 h3 {
-    font-size: 3vmin; /* Alternate size 1.75rem */
+    font-size: 3vmin;
+    /* Alternate size 1.75rem */
 }
 
 p {
@@ -110,6 +119,7 @@ header .left {
 header .right {
     margin-right: 1.5rem;
 }
+
 /* Menu tren man hinh desktop */
 header li {
     display: inline-block;
@@ -134,43 +144,43 @@ header .mobile {
     display: none;
 }
 
-.container-total{
+.container-total {
     display: flex;
     flex-direction: row;
 }
 
-.container-total2{
+.container-total2 {
     display: flex;
     flex-direction: row;
 }
 
-.container-left{
+.container-left {
     width: 50%;
     overflow: hidden;
     margin: 32px 24px 32px 24px;
 }
 
-.container-left2{
+.container-left2 {
     width: 50%;
     overflow: hidden;
     margin: 32px 24px 32px 24px;
 }
 
-.container-left3{
+.container-left3 {
     width: 50%;
     overflow: hidden;
     margin: 32px 24px 32px 24px;
 }
 
-.left-img1{
+.left-img1 {
     width: 100%;
 }
 
-.left-img2{
+.left-img2 {
     width: 100%;
 }
 
-.left-video{
+.left-video {
     width: 100%;
 }
 
@@ -181,7 +191,7 @@ header .mobile {
     header .desktop {
         display: none;
     }
-    
+
     /*chỉnh item màn hình mobile */
     header .mobile {
         display: block;
@@ -206,12 +216,13 @@ header .mobile {
 /* Banner */
 
 #banner {
-    display: flex; 
+    display: flex;
     background-color: lightgray;
-} 
+}
 
 #banner-image {
-    width: 50%; /*hinh anh chi chiem 50% man hinh*/
+    width: 50%;
+    /*hinh anh chi chiem 50% man hinh*/
     /* margin: 2rem; */
     margin: 32px 24px 32px 24px;
 }
@@ -243,24 +254,23 @@ h3 {
     color: white;
 } */
 
-.newspaper-item a{
+.newspaper-item a {
     color: black;
 }
 
-.newspaper-item a:hover{
+.newspaper-item a:hover {
     color: rgb(77, 139, 141);
 }
 
-#content{
+#content {
     background-color: rgb(200, 198, 198);
-    border: 1px solid;
 }
 
-.course-tittle{
+.course-tittle {
     text-align: center;
 }
 
-.course-content{
+.course-content {
     display: flex;
     text-align: center;
     margin-top: 32px;
@@ -268,39 +278,39 @@ h3 {
     padding-right: 72px;
 }
 
-.content-element{
+.content-element {
     /* border: 1px solid; */
     margin-right: 32px;
-    background: white; 
+    background: white;
     border: 1px solid;
     flex-basis: 30%;
 
 }
 
-.course-software-img img{
+.course-software-img img {
     width: 50%;
 }
 
-.course-computer-art-img img{
+.course-computer-art-img img {
     width: 50%;
 }
 
-.course-design-img img{
+.course-design-img img {
     width: 50%;
 }
 
-.text{
+.text {
     background: white;
     border: 1px solid;
 
 }
 
 
-.content-element img{
+.content-element img {
     width: 100%
 }
 
-.newspaper-item span{
+.newspaper-item span {
     line-height: 2;
 }
 
@@ -321,10 +331,11 @@ h3 {
         min-width: 90%;
     }
 
-    .container-left{
+    .container-left {
         width: 100%;
         margin: 0;
     }
+
     /* Chuyển định dạng của banner thành dạng dọc (flex-flow: column) */
     #banner {
         flex-direction: column;
@@ -335,7 +346,8 @@ h3 {
     #banner .container-right {
         display: flex;
         width: 100%;
-        align-items: center; /* Center items vertically */
+        align-items: center;
+        /* Center items vertically */
         padding: 0 1rem 2rem;
         flex-direction: column;
         margin-left: 0;
@@ -346,33 +358,40 @@ h3 {
         width: 50%;
     }
 
-    .newspaper-container{
+    .newspaper-container {
         flex-direction: column;
         padding-top: 16px;
     }
-    .newspaper-container > * {
+
+    .newspaper-container>* {
         width: 100%;
         box-sizing: border-box;
     }
 
-    .container-total{
-      flex-direction: column;
+    .container-total {
+        flex-direction: column;
     }
-    .newspaper-item{
 
+    .newspaper-item {
         padding-top: 0;
         padding-bottom: 0;
     }
-    .newspaper-item img{
+
+    .newspaper-item img {
         width: 100%;
         height: 150px;
     }
-    .mobile-mode{
+
+    .mobile-mode {
         padding-left: 16px;
     }
 
-    .rest-newspaper{
+    .rest-newspaper {
         font-size: small;
+    }
+
+    .content-video .left-video {
+        width: 100%;
     }
 
 }
@@ -408,9 +427,38 @@ h3 {
     .left-img2 {
         display: none;
     }
-    
-    .content-content{
+
+    .content-content {
         display: none;
     }
-}
 
+    .content-element img {
+        display: none;
+    }
+
+    .content-element p {
+        display: none;
+    }
+
+    .content-element h4 {
+        font-size: 15px;
+    }
+
+    .content-element {
+        background-color: rgb(200, 198, 198);
+        margin-top: 10px;
+        
+    }
+
+    #content {
+        background-color: white;
+    }
+
+    .course-content {   
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+
+}
