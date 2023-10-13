@@ -31,20 +31,21 @@ footer {
 .newspaper-container {
     display: flex;
     flex-direction: row;
-    border: 1px solid;
+    /* border: 1px solid; */
 }
 
 .newspaper-item {
-    width: 30%;
-    height: fit-content;
-    width: fit-content;
-    padding: 16px;
+    /* height: fit-content;
+    width: fit-content; */
+    padding-top: 10px;
+
 }
 
 /*image*/
 .newspaper-image {
     height: auto;
     width: 65%;
+    margin-left: 60px;
 }
 
 .left-image {
@@ -92,7 +93,7 @@ p {
 
 /* Chu thay doi mau khi click vao link */
 a:hover {
-    color: rgb(77, 139, 141);
+    color: rgb(153, 232, 234);
     font-size: 110%;
 }
 
@@ -103,7 +104,7 @@ header {
     /* z-index: 1; */
     width: 100%;
     height: 4.5rem;
-    background-color: white;
+    background-color: rgb(192, 186, 244);
     font-size: 1.25rem;
     /* line-height: 4.5rem; */
     overflow: hidden;
@@ -130,9 +131,9 @@ header .left a:hover {
     color: #505050;
 }
 
-header span {
+/* header span {
     color: gray;
-}
+} */
 
 .desktop img {
     height: 4rem;
@@ -167,7 +168,7 @@ header .mobile {
 }
 
 .container-left3 {
-    width: 50%;
+    width: 100%;
     overflow: hidden;
     margin: 32px 24px 32px 24px;
 }
@@ -183,7 +184,22 @@ header .mobile {
 .left-video {
     width: 100%;
 }
+.desktop{
+    display: flex;
+    
+}
+.desktop .left{
+    width: 40%;
+}
+.desktop .right{
+    width: 60%;
+    display: flex;
+    justify-content: right;
+}
 
+.right ul li{
+    font-size: 20px;
+}
 /*Co giãn theo từng màn hình*/
 @media only screen and (max-width: 650px) {
 
@@ -235,6 +251,7 @@ header .mobile {
 
 .container-right2 {
     padding-top: 2%;
+    /* padding-left: 24px; */
 }
 
 .container-right3 {
@@ -276,6 +293,8 @@ h3 {
     margin-top: 32px;
     padding-left: 72px;
     padding-right: 72px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 .content-element {
@@ -284,6 +303,12 @@ h3 {
     background: white;
     border: 1px solid;
     flex-basis: 30%;
+    margin-bottom: 20px; /* Default spacing for all elements */
+
+}
+
+
+.course-tittle h2{
 
 }
 
@@ -324,7 +349,7 @@ h3 {
 
 
 /*Co giãn blog thứ 1*/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 650px) {
 
     /* Giảm kích thước tối thiểu của hình ảnh trong banner */
     #banner-image {
@@ -394,6 +419,15 @@ h3 {
         width: 100%;
     }
 
+    .content-element{
+        margin-right: 0;
+        margin-bottom: 0;
+    }
+    .course-content{
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 5px;
+    }
 }
 
 @media only screen and (max-width: 650px) {
