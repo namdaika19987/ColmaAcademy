@@ -45,7 +45,7 @@ footer {
 .newspaper-image {
     height: auto;
     width: 65%;
-    margin-left: 60px;
+    /* margin-left: 60px; */
 }
 
 .left-image {
@@ -251,7 +251,7 @@ header .mobile {
 
 .container-right2 {
     padding-top: 2%;
-    /* padding-left: 24px; */
+    padding-left: 66px;
 }
 
 .container-right3 {
@@ -352,8 +352,9 @@ h3 {
 @media only screen and (max-width: 650px) {
 
     /* Giảm kích thước tối thiểu của hình ảnh trong banner */
-    #banner-image {
+    .left-img1 {
         min-width: 90%;
+        height: 50%;
     }
 
     .container-left {
@@ -371,16 +372,15 @@ h3 {
     #banner .container-right {
         display: flex;
         width: 100%;
-        align-items: center;
-        /* Center items vertically */
+        /* align-items: center; */
         padding: 0 1rem 2rem;
         flex-direction: column;
-        margin-left: 0;
+        margin-left: 26px;
         padding-top: 0;
     }
 
     .button {
-        width: 50%;
+        width: 80%;
     }
 
     .newspaper-container {
@@ -404,7 +404,7 @@ h3 {
 
     .newspaper-item img {
         width: 100%;
-        height: 150px;
+        height: 250px;
     }
 
     .mobile-mode {
@@ -437,9 +437,6 @@ h3 {
         margin: auto;
     }
 
-    /* #banner .container-right {
-        padding: 2rem 0;
-    } */
 
 }
 
